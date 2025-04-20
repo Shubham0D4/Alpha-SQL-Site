@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  @apply bg-gray-950 text-gray-200;
+  overflow-x: hidden;
+}
+
+code, pre {
+  font-family: var(--font-mono);
+}
+
+.card {
+  @apply bg-gray-800 rounded-xl p-6 transition-all duration-300;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.gradient-text {
+  @apply text-transparent bg-clip-text;
+  background-image: linear-gradient(90deg, #3B82F6, #A855F7);
+}
+
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium transition-all duration-200;
+}
+
+.btn-primary {
+  @apply bg-blue-600 hover:bg-blue-700 text-white;
+}
+
+.btn-secondary {
+  @apply bg-gray-700 hover:bg-gray-600 text-white;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+/* Code block styling */
+.code-block {
+  @apply rounded-lg overflow-hidden relative;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.copy-button {
+  @apply absolute top-2 right-2 p-2 rounded-md bg-gray-700 hover:bg-gray-600 transition-colors text-gray-300;
+}
+
+.function-card {
+  @apply transition-all duration-300 hover:bg-gray-700/50;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+/* NavBar active states */
+.nav-link {
+  @apply transition-colors duration-200 relative;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-200;
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+  @apply w-full;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-600;
+}
