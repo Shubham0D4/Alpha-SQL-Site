@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
     { name: 'Features', href: '#features' },
     { name: 'Installation', href: '#installation' },
     { name: 'Documentation', href: '#documentation' },
-    { name: 'GitHub', href: 'https://github.com/user/mysql-module' }
+    { name: 'GitHub', href: 'https://github.com/Shubham0D4/apha-sql' }
   ];
 
   return (
