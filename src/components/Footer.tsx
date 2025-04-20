@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
               <ul className="space-y-2">
                 <li><a href="#documentation" className="text-gray-400 hover:text-blue-400 transition-colors">Documentation</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">API Reference</a></li>
-                <li><a href="https://github.com" className="text-gray-400 hover:text-blue-400 transition-colors">GitHub</a></li>
+                <li><a href="https://github.com/Shubham0D4/apha-sql" className="text-gray-400 hover:text-blue-400 transition-colors">GitHub</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">Releases</a></li>
               </ul>
             </div>
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
             <div className="col-span-2 sm:col-span-1">
               <h3 className="text-white font-medium mb-4">Connect</h3>
               <div className="flex space-x-4">
-                <a href="https://github.com" className="text-gray-400 hover:text-white transition-colors">
+                <a href="https://github.com/Shubham0D4/apha-sql" className="text-gray-400 hover:text-white transition-colors">
                   <Github className="h-5 w-5" />
                 </a>
                 <a href="https://twitter.com" className="text-gray-400 hover:text-white transition-colors">
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} MySQLizer. All rights reserved.
+            &copy; {new Date().getFullYear()} Alpha-SQL. All rights reserved.
           </p>
           
           <div className="flex items-center text-sm text-gray-500">
